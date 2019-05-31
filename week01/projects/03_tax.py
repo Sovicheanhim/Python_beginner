@@ -1,7 +1,7 @@
 WELCOME_MESSAGE = "Please enter your amount:"
-TAX_INCORRECT = "Number is incorrect, try again."
+INCORRECT_TAX = "Number is incorrect, try again."
 TAX_RATE = "Please enter your tax rate:"
-RATE_INCORRECT = "Rate is incorrect, try again."
+INCORRECT_RATE = "Rate is incorrect, try again."
 EQUAL_SIGN = "===== ===== ===== ===== ====="
 
 while 1:
@@ -9,7 +9,7 @@ while 1:
     amount = input()
     check = amount.isdigit()
     if check is False:
-        print(TAX_INCORRECT)
+        print(INCORRECT_TAX)
         continue
     else:
         amount = int(amount)
@@ -19,7 +19,7 @@ while 1:
             check = taxRate.isdigit()
             taxRate = int(taxRate)
             if check is False:
-                print(TAX_INCORRECT)
+                print(INCORRECT_RATE)
                 continue
             elif taxRate >= 1 and taxRate <= 99:
                 tax = amount * taxRate / 100
@@ -33,6 +33,6 @@ while 1:
                 print(EQUAL_SIGN)
                 break
             else:
-                print(TAX_INCORRECT)
+                print(INCORRECT_RATE)
                 continue
         break
