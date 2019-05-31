@@ -31,7 +31,7 @@ def checking_card1(p1):
         card1_number = [11 if rank == "J" else rank for rank in card1_number]       #
         card1_number = [10 if rank == "T" else rank for rank in card1_number]       #
     min_rank = min(int(x) for x in card1_number)                                   # finding minimum number
-    max_rank = max(int(x) for x in card1_number)                                   # findnign maximum number
+    max_rank = max(int(x) for x in card1_number)                                   # findning maximum number
 
 
     chances_for_flush = None                                                        # checking for all FLUSH possibilities
