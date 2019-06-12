@@ -1,0 +1,5 @@
+title	content	difficulty
+week01	python syntax	very easy
+week02	python data manipulation	easy
+week03	python files and requests 	intermediate
+week04	python class and advanced concepts	hard
